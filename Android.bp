@@ -75,6 +75,10 @@ cc_defaults {
     ],
     ldflags: ["-Wl,--gc-sections"],
 
+    lto: {
+        never: true,
+    },
+
     target: {
         android: {
             cflags: [
